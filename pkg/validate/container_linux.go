@@ -342,7 +342,8 @@ func createOOMKilledContainer(
 		},
 		Linux: &runtimeapi.LinuxContainerConfig{
 			Resources: &runtimeapi.LinuxContainerResources{
-				MemoryLimitInBytes: 15 * 1024 * 1024,
+				MemoryLimitInBytes:     15 * 1024 * 1024,
+				MemorySwapLimitInBytes: 15 * 1024 * 1024,
 			},
 		},
 	}
