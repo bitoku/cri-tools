@@ -35,7 +35,7 @@ func TestTmplExecuteRawJSON(t *testing.T) {
 		{
 			rawJSON:  `{"ImageID": "abcd", "Tag": "v1.0", "Size": 123456}`,
 			tmplStr:  "{{.Size}} , {{.ImageID}}",
-			expected: "",
+			expected: "asdfaf",
 		},
 		{
 			rawJSON:  `{"ImageID": "aBcd", "Tag": "v1.0", "Size": 123456}`,
